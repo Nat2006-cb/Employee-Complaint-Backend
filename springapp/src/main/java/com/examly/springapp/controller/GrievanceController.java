@@ -46,10 +46,10 @@ public class GrievanceController {
     }
 
     @GetMapping("/grievances/{id}")
-    public ResponseEntity<Grievance> getid(@PathVariable Long id){
+    public ResponseEntity<?> getid(@PathVariable Long id){
         Grievance res=grievanceServiceImpl.getid(id);
         if(res==null){
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>("Grievance not found", HttpStatus.NOT_FOUND);
         }
         else{
             return new ResponseEntity<>(res,HttpStatus.OK);

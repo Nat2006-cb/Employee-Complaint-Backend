@@ -1,14 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: com.examly.springapp.SpringappApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 79, Failures: 22, Errors: 0, Skipped: 0, Time elapsed: 4.444 s <<< FAILURE! - in com.examly.springapp.SpringappApplicationTests
-com.examly.springapp.SpringappApplicationTests.Day6_testGetGrievanceById_StatusNotFound  Time elapsed: 0.025 s  <<< FAILURE!
-java.lang.AssertionError: 
-Response content
-Expected: a string containing "Grievance not found"
-     but: was ""
-	at com.examly.springapp.SpringappApplicationTests.Day6_testGetGrievanceById_StatusNotFound(SpringappApplicationTests.java:453)
-
+Tests run: 79, Failures: 21, Errors: 0, Skipped: 0, Time elapsed: 3.731 s <<< FAILURE! - in com.examly.springapp.SpringappApplicationTests
 com.examly.springapp.SpringappApplicationTests.Day7_test_UserController_Has_RequestMapping  Time elapsed: 0.003 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: ❌ No @RequestMapping found on UserController (class or methods) ==> expected: <true> but was: <false>
 	at com.examly.springapp.SpringappApplicationTests.Day7_test_UserController_Has_RequestMapping(SpringappApplicationTests.java:482)
@@ -21,7 +14,7 @@ com.examly.springapp.SpringappApplicationTests.Day9_testPagination_PageNumberApp
 java.lang.AssertionError: Status expected:<200> but was:<404>
 	at com.examly.springapp.SpringappApplicationTests.Day9_testPagination_PageNumberApplied(SpringappApplicationTests.java:803)
 
-com.examly.springapp.SpringappApplicationTests.Day9_testPagination_PageSizeApplied  Time elapsed: 0.003 s  <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day9_testPagination_PageSizeApplied  Time elapsed: 0.004 s  <<< FAILURE!
 java.lang.AssertionError: Status expected:<200> but was:<404>
 	at com.examly.springapp.SpringappApplicationTests.Day9_testPagination_PageSizeApplied(SpringappApplicationTests.java:815)
 
@@ -41,15 +34,15 @@ com.examly.springapp.SpringappApplicationTests.Day9_testPagination_TotalPagesExi
 java.lang.AssertionError: Status expected:<200> but was:<404>
 	at com.examly.springapp.SpringappApplicationTests.Day9_testPagination_TotalPagesExists(SpringappApplicationTests.java:866)
 
-com.examly.springapp.SpringappApplicationTests.Day10_testAddUser  Time elapsed: 0.004 s  <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day10_testAddUser  Time elapsed: 0.003 s  <<< FAILURE!
 java.lang.AssertionError: Status expected:<201> but was:<404>
 	at com.examly.springapp.SpringappApplicationTests.Day10_testAddUser(SpringappApplicationTests.java:889)
 
-com.examly.springapp.SpringappApplicationTests.Day10_testGetAllUsers  Time elapsed: 0.003 s  <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day10_testGetAllUsers  Time elapsed: 0.004 s  <<< FAILURE!
 java.lang.AssertionError: Status expected:<200> but was:<404>
 	at com.examly.springapp.SpringappApplicationTests.Day10_testGetAllUsers(SpringappApplicationTests.java:902)
 
-com.examly.springapp.SpringappApplicationTests.Day10_testGetUserById  Time elapsed: 0.004 s  <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day10_testGetUserById  Time elapsed: 0.003 s  <<< FAILURE!
 java.lang.AssertionError: Status expected:<200> but was:<404>
 	at com.examly.springapp.SpringappApplicationTests.Day10_testGetUserById(SpringappApplicationTests.java:913)
 
@@ -57,11 +50,11 @@ com.examly.springapp.SpringappApplicationTests.Day10_testUpdateUser  Time elapse
 java.lang.AssertionError: Status expected:<200> but was:<404>
 	at com.examly.springapp.SpringappApplicationTests.Day10_testUpdateUser(SpringappApplicationTests.java:935)
 
-com.examly.springapp.SpringappApplicationTests.Day11_testSearchGrievanceCategories  Time elapsed: 0.01 s  <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day11_testSearchGrievanceCategories  Time elapsed: 0.008 s  <<< FAILURE!
 java.lang.AssertionError: Status expected:<200> but was:<404>
 	at com.examly.springapp.SpringappApplicationTests.Day11_testSearchGrievanceCategories(SpringappApplicationTests.java:1039)
 
-com.examly.springapp.SpringappApplicationTests.Day12_testAddComment  Time elapsed: 0.035 s  <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day12_testAddComment  Time elapsed: 0.033 s  <<< FAILURE!
 java.lang.AssertionError: Status expected:<201> but was:<400>
 	at com.examly.springapp.SpringappApplicationTests.Day12_testAddComment(SpringappApplicationTests.java:1076)
 
@@ -73,7 +66,7 @@ com.examly.springapp.SpringappApplicationTests.Day12_testGetCommentById  Time el
 java.lang.AssertionError: Status expected:<200> but was:<404>
 	at com.examly.springapp.SpringappApplicationTests.Day12_testGetCommentById(SpringappApplicationTests.java:1098)
 
-com.examly.springapp.SpringappApplicationTests.Day12_testUpdateComment  Time elapsed: 0.009 s  <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day12_testUpdateComment  Time elapsed: 0.01 s  <<< FAILURE!
 java.lang.AssertionError: Status expected:<200> but was:<404>
 	at com.examly.springapp.SpringappApplicationTests.Day12_testUpdateComment(SpringappApplicationTests.java:1116)
 
@@ -85,7 +78,7 @@ com.examly.springapp.SpringappApplicationTests.Day13_test_GloabalEception_File_E
 org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at com.examly.springapp.SpringappApplicationTests.Day13_test_GloabalEception_File_Exists(SpringappApplicationTests.java:1135)
 
-com.examly.springapp.SpringappApplicationTests.Day14test_configuartion_Directory_Exists  Time elapsed: 0.002 s  <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day14test_configuartion_Directory_Exists  Time elapsed: 0.001 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at com.examly.springapp.SpringappApplicationTests.Day14test_configuartion_Directory_Exists(SpringappApplicationTests.java:1142)
 
