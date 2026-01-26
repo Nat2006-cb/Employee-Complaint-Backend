@@ -4,26 +4,32 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 
 @Entity
 public class GrievanceCategory {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long categoryId;
+    private Long categoryId;
     private String categoryName;
     private String description;
+    @ManyToOne
+    @JoinColumn(name = "department_id")
+    private Department department;
 
     public GrievanceCategory(){
 
     }
-    public GrievanceCategory(String categoryName, String description) {
+    public GrievanceCategory(String categoryName, String description, Department department) {
         this.categoryName = categoryName;
         this.description = description;
+        this.department = department;
     }
-    public long getCategoryId() {
+    public Long getCategoryId() {
         return categoryId;
     }
-    public void setCategoryId(long categoryId) {
+    public void setCategoryId(Long categoryId) {
         this.categoryId = categoryId;
     }
     public String getCategoryName() {
@@ -38,8 +44,12 @@ public class GrievanceCategory {
     public void setDescription(String description) {
         this.description = description;
     }
+    public Department getDepartment() {
+        return department;
+    }
+    public void setDepartment(Department department) {
+        this.department = department;
+    }
     
-    
-
     
 }
