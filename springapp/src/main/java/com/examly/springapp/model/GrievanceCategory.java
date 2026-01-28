@@ -18,7 +18,7 @@ public class GrievanceCategory {
     @JoinColumn(name = "department_id")
     private Department department;
 
-    public GrievanceCategory(){
+    public GrievanceCategory(){ 
 
     }
     public GrievanceCategory(String categoryName, String description, Department department) {
